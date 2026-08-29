@@ -6,7 +6,11 @@ OpenChoices 是一个不依赖服务器的开源软件目录。它使用公开�
 
 当前目录包含 100 个常用免费开源产品，覆盖效率办公、设计创作、音视频、开发、网络、安全和系统工具等方向。其中 93 个提供已经核对的 WinGet 包 ID。
 
-![OpenChoices 首页预览](docs/preview.png)
+![OpenChoices 首页预览](docs/promo-home.png)
+
+搜索 `Photoshop` 后会直接显示对应的开源选择：
+
+![OpenChoices 搜索 Photoshop](docs/promo-search-photoshop.png)
 
 ## 当前功能
 
