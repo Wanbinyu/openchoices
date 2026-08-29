@@ -69,7 +69,7 @@ for (const [index, app] of (catalog.apps ?? []).entries()) {
     if (!allowedProviders.has(app.install.provider)) {
       errors.push(`${prefix}.install.provider is not allowed`);
     }
-    if (!/^[A-Za-z0-9][A-Za-z0-9._-]+$/.test(app.install.packageId ?? "")) {
+    if (!/^[A-Za-z0-9][A-Za-z0-9._+-]+$/.test(app.install.packageId ?? "")) {
       errors.push(`${prefix}.install.packageId has an invalid format`);
     }
     if (packageIds.has(app.install.packageId)) {

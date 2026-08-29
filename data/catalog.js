@@ -1,7 +1,7 @@
 // Generated from data/catalog.json. Run `npm run generate` after editing the catalog.
 window.OPENCHOICES_CATALOG = {
   "metadata": {
-    "version": "0.2.0",
+    "version": "0.3.0",
     "updatedAt": "2026-08-29",
     "schemaVersion": 1,
     "description": "OpenChoices curated open-source alternatives catalog"
@@ -1569,6 +1569,1640 @@ window.OPENCHOICES_CATALOG = {
       "verified": true,
       "verifiedAt": "2026-08-29",
       "rank": 50
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "description": "注重隐私、支持丰富扩展并采用独立浏览器引擎的跨平台网页浏览器。",
+      "category": "浏览器",
+      "alternativeTo": [
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "aliases": [
+        "火狐",
+        "网页浏览器"
+      ],
+      "tags": [
+        "隐私",
+        "浏览器"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "MPL-2.0",
+      "repository": "https://github.com/mozilla-firefox/firefox",
+      "website": "https://www.mozilla.org/firefox/new/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Mozilla.Firefox"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 51
+    },
+    {
+      "id": "librewolf",
+      "name": "LibreWolf",
+      "description": "基于 Firefox、默认强化隐私设置并移除遥测的社区浏览器。",
+      "category": "浏览器",
+      "alternativeTo": [
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "aliases": [
+        "隐私浏览器",
+        "Firefox 分支"
+      ],
+      "tags": [
+        "隐私",
+        "无遥测"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MPL-2.0",
+      "repository": "https://codeberg.org/librewolf/source",
+      "website": "https://librewolf.net/",
+      "install": {
+        "provider": "winget",
+        "packageId": "LibreWolf.LibreWolf"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 52
+    },
+    {
+      "id": "tor-browser",
+      "name": "Tor Browser",
+      "description": "通过 Tor 网络降低跨站跟踪与来源识别风险的隐私浏览器。",
+      "category": "浏览器",
+      "alternativeTo": [
+        "Google Chrome",
+        "Microsoft Edge"
+      ],
+      "aliases": [
+        "洋葱浏览器",
+        "匿名浏览器"
+      ],
+      "tags": [
+        "Tor",
+        "隐私"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android"
+      ],
+      "license": "MPL-2.0",
+      "repository": "https://gitlab.torproject.org/tpo/applications/tor-browser",
+      "website": "https://www.torproject.org/download/",
+      "install": {
+        "provider": "winget",
+        "packageId": "TorProject.TorBrowser"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 53
+    },
+    {
+      "id": "godot",
+      "name": "Godot Engine",
+      "description": "支持二维与三维游戏开发、脚本和跨平台导出的完整游戏引擎。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Unity",
+        "Unreal Engine"
+      ],
+      "aliases": [
+        "游戏引擎",
+        "游戏开发"
+      ],
+      "tags": [
+        "游戏开发",
+        "2D/3D"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/godotengine/godot",
+      "website": "https://godotengine.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "GodotEngine.GodotEngine"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 54
+    },
+    {
+      "id": "penpot",
+      "name": "Penpot",
+      "description": "面向界面设计与原型协作、基于开放 Web 标准且可自托管的设计平台。",
+      "category": "图形设计",
+      "alternativeTo": [
+        "Figma",
+        "Adobe XD"
+      ],
+      "aliases": [
+        "UI 设计",
+        "原型设计"
+      ],
+      "tags": [
+        "协作设计",
+        "自托管"
+      ],
+      "platforms": [
+        "Web"
+      ],
+      "license": "MPL-2.0",
+      "repository": "https://github.com/penpot/penpot",
+      "website": "https://penpot.app/",
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 55
+    },
+    {
+      "id": "diagrams-net",
+      "name": "diagrams.net Desktop",
+      "description": "用于流程图、架构图、网络拓扑和思维图的离线桌面绘图工具。",
+      "category": "图形设计",
+      "alternativeTo": [
+        "Microsoft Visio",
+        "Lucidchart"
+      ],
+      "aliases": [
+        "draw.io",
+        "流程图"
+      ],
+      "tags": [
+        "流程图",
+        "离线"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/jgraph/drawio-desktop",
+      "website": "https://www.drawio.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "JGraph.Draw"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 56
+    },
+    {
+      "id": "pencil-project",
+      "name": "Pencil Project",
+      "description": "用于界面线框图、页面原型和流程草图的跨平台桌面工具。",
+      "category": "图形设计",
+      "alternativeTo": [
+        "Balsamiq Wireframes",
+        "Axure RP"
+      ],
+      "aliases": [
+        "线框图",
+        "原型设计"
+      ],
+      "tags": [
+        "原型",
+        "线框图"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/evolus/pencil",
+      "website": "https://pencil.evolus.vn/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Evolus.Pencil"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 57
+    },
+    {
+      "id": "openscad",
+      "name": "OpenSCAD",
+      "description": "通过代码和参数精确描述实体模型的三维 CAD 建模工具。",
+      "category": "工程设计",
+      "alternativeTo": [
+        "Autodesk Fusion 360",
+        "SolidWorks"
+      ],
+      "aliases": [
+        "代码建模",
+        "参数化 CAD"
+      ],
+      "tags": [
+        "CAD",
+        "参数化建模"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/openscad/openscad",
+      "website": "https://openscad.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "OpenSCAD.OpenSCAD"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 58
+    },
+    {
+      "id": "sweet-home-3d",
+      "name": "Sweet Home 3D",
+      "description": "通过二维户型布置和实时三维预览完成室内空间与家具规划。",
+      "category": "工程设计",
+      "alternativeTo": [
+        "SketchUp",
+        "Floorplanner"
+      ],
+      "aliases": [
+        "室内设计",
+        "户型设计"
+      ],
+      "tags": [
+        "家居设计",
+        "3D"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://sourceforge.net/p/sweethome3d/code/HEAD/tree/",
+      "website": "https://www.sweethome3d.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "eTeks.SweetHome3D"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 59
+    },
+    {
+      "id": "ardour",
+      "name": "Ardour",
+      "description": "面向录音、混音、母带和 MIDI 制作的专业数字音频工作站。",
+      "category": "音视频",
+      "alternativeTo": [
+        "Pro Tools",
+        "Adobe Audition"
+      ],
+      "aliases": [
+        "DAW",
+        "数字音频工作站"
+      ],
+      "tags": [
+        "录音",
+        "混音"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/Ardour/ardour",
+      "website": "https://ardour.org/",
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 60
+    },
+    {
+      "id": "mixxx",
+      "name": "Mixxx",
+      "description": "支持多甲板、控制器、节拍同步和现场混音的 DJ 软件。",
+      "category": "音视频",
+      "alternativeTo": [
+        "VirtualDJ",
+        "Serato DJ Pro"
+      ],
+      "aliases": [
+        "DJ 软件",
+        "现场混音"
+      ],
+      "tags": [
+        "DJ",
+        "混音"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/mixxxdj/mixxx",
+      "website": "https://mixxx.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Mixxx.Mixxx"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 61
+    },
+    {
+      "id": "kodi",
+      "name": "Kodi",
+      "description": "适合电视与家庭影音中心使用的媒体库管理和播放软件。",
+      "category": "音视频",
+      "alternativeTo": [
+        "Plex",
+        "PowerDVD"
+      ],
+      "aliases": [
+        "家庭影院",
+        "媒体中心"
+      ],
+      "tags": [
+        "媒体库",
+        "电视界面"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/xbmc/xbmc",
+      "website": "https://kodi.tv/",
+      "install": {
+        "provider": "winget",
+        "packageId": "XBMCFoundation.Kodi"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 62
+    },
+    {
+      "id": "jellyfin",
+      "name": "Jellyfin",
+      "description": "可自托管的影音库与串流平台，可在多种客户端上播放个人媒体。",
+      "category": "音视频",
+      "alternativeTo": [
+        "Plex",
+        "Emby"
+      ],
+      "aliases": [
+        "媒体服务器",
+        "家庭影音"
+      ],
+      "tags": [
+        "自托管",
+        "串流"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "license": "GPL-2.0-only",
+      "repository": "https://github.com/jellyfin/jellyfin",
+      "website": "https://jellyfin.org/",
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 63
+    },
+    {
+      "id": "musicbrainz-picard",
+      "name": "MusicBrainz Picard",
+      "description": "依据 MusicBrainz 数据自动识别、整理并批量写入音乐文件标签。",
+      "category": "音视频",
+      "alternativeTo": [
+        "Mp3tag",
+        "MediaMonkey"
+      ],
+      "aliases": [
+        "音乐标签",
+        "元数据整理"
+      ],
+      "tags": [
+        "音乐管理",
+        "标签"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/metabrainz/picard",
+      "website": "https://picard.musicbrainz.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "MusicBrainz.Picard"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 64
+    },
+    {
+      "id": "stellarium",
+      "name": "Stellarium",
+      "description": "以真实星空为基础模拟天体位置、时间和观测环境的桌面天文馆。",
+      "category": "教育学习",
+      "alternativeTo": [
+        "Starry Night",
+        "SkySafari Pro"
+      ],
+      "aliases": [
+        "天文软件",
+        "星图"
+      ],
+      "tags": [
+        "天文",
+        "星空模拟"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/Stellarium/stellarium",
+      "website": "https://stellarium.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Stellarium.Stellarium"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 65
+    },
+    {
+      "id": "veracrypt",
+      "name": "VeraCrypt",
+      "description": "用于创建加密容器、加密磁盘分区和系统盘的本地加密工具。",
+      "category": "安全隐私",
+      "alternativeTo": [
+        "BitLocker",
+        "Symantec Encryption Desktop"
+      ],
+      "aliases": [
+        "磁盘加密",
+        "加密容器"
+      ],
+      "tags": [
+        "加密",
+        "磁盘"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/veracrypt/VeraCrypt",
+      "website": "https://veracrypt.io/",
+      "install": {
+        "provider": "winget",
+        "packageId": "IDRIX.VeraCrypt"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 66
+    },
+    {
+      "id": "cryptomator",
+      "name": "Cryptomator",
+      "description": "在文件同步到云端前进行客户端加密，并以虚拟磁盘方式访问。",
+      "category": "安全隐私",
+      "alternativeTo": [
+        "Boxcryptor"
+      ],
+      "aliases": [
+        "云盘加密",
+        "文件加密"
+      ],
+      "tags": [
+        "客户端加密",
+        "云存储"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "GPL-3.0-or-later",
+      "repository": "https://github.com/cryptomator/cryptomator",
+      "website": "https://cryptomator.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Cryptomator.Cryptomator"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 67
+    },
+    {
+      "id": "wireguard",
+      "name": "WireGuard",
+      "description": "配置简单、代码精简且强调现代密码学设计的 VPN 协议与客户端。",
+      "category": "安全隐私",
+      "alternativeTo": [
+        "Cisco AnyConnect",
+        "NordVPN"
+      ],
+      "aliases": [
+        "VPN",
+        "虚拟专用网络"
+      ],
+      "tags": [
+        "VPN",
+        "加密隧道"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "GPL-2.0-only",
+      "repository": "https://github.com/WireGuard/wireguard-windows",
+      "website": "https://www.wireguard.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "WireGuard.WireGuard"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 68
+    },
+    {
+      "id": "openvpn",
+      "name": "OpenVPN Community",
+      "description": "成熟的跨平台 VPN 方案，支持证书认证和多种网络部署方式。",
+      "category": "安全隐私",
+      "alternativeTo": [
+        "Cisco AnyConnect",
+        "FortiClient VPN"
+      ],
+      "aliases": [
+        "VPN 客户端",
+        "虚拟专用网络"
+      ],
+      "tags": [
+        "VPN",
+        "远程访问"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "GPL-2.0-only",
+      "repository": "https://github.com/OpenVPN/openvpn",
+      "website": "https://openvpn.net/community-downloads/",
+      "install": {
+        "provider": "winget",
+        "packageId": "OpenVPNTechnologies.OpenVPN"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 69
+    },
+    {
+      "id": "notesnook",
+      "name": "Notesnook",
+      "description": "默认端到端加密、支持多端同步和富文本编辑的隐私笔记应用。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Evernote",
+        "Microsoft OneNote"
+      ],
+      "aliases": [
+        "加密笔记",
+        "云笔记"
+      ],
+      "tags": [
+        "笔记",
+        "端到端加密"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "license": "GPL-3.0-or-later",
+      "repository": "https://github.com/streetwriters/notesnook",
+      "website": "https://notesnook.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Streetwriters.Notesnook"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 70
+    },
+    {
+      "id": "logseq",
+      "name": "Logseq",
+      "description": "以双向链接、大纲和本地文件为核心的知识管理与任务记录工具。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Roam Research",
+        "Obsidian"
+      ],
+      "aliases": [
+        "双链笔记",
+        "大纲笔记"
+      ],
+      "tags": [
+        "知识管理",
+        "本地优先"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "AGPL-3.0-only",
+      "repository": "https://github.com/logseq/logseq",
+      "website": "https://logseq.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Logseq.Logseq"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 71
+    },
+    {
+      "id": "trilium-notes",
+      "name": "Trilium Notes",
+      "description": "支持层级笔记、关系图、脚本和自托管同步的个人知识库。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Notion",
+        "Microsoft OneNote"
+      ],
+      "aliases": [
+        "知识库",
+        "树状笔记"
+      ],
+      "tags": [
+        "知识管理",
+        "自托管"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Web"
+      ],
+      "license": "AGPL-3.0-only",
+      "repository": "https://github.com/TriliumNext/Trilium",
+      "website": "https://triliumnotes.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "TriliumNext.Notes"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 72
+    },
+    {
+      "id": "standard-notes",
+      "name": "Standard Notes",
+      "description": "围绕端到端加密、跨端同步和长期可读性设计的笔记应用。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Evernote",
+        "Apple Notes"
+      ],
+      "aliases": [
+        "加密笔记",
+        "安全笔记"
+      ],
+      "tags": [
+        "笔记",
+        "隐私"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS",
+        "Web"
+      ],
+      "license": "AGPL-3.0-only",
+      "repository": "https://github.com/standardnotes/app",
+      "website": "https://standardnotes.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "StandardNotes.StandardNotes"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 73
+    },
+    {
+      "id": "marktext",
+      "name": "MarkText",
+      "description": "提供所见即所得编辑体验、专注模式和主题的 Markdown 编辑器。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Typora",
+        "iA Writer"
+      ],
+      "aliases": [
+        "Markdown 编辑器",
+        "写作软件"
+      ],
+      "tags": [
+        "Markdown",
+        "写作"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/marktext/marktext",
+      "website": "https://marktext.github.io/website/",
+      "install": {
+        "provider": "winget",
+        "packageId": "MarkText.MarkText"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 74
+    },
+    {
+      "id": "zettlr",
+      "name": "Zettlr",
+      "description": "面向研究、长文写作和引用管理工作流的 Markdown 编辑器。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Scrivener",
+        "Typora"
+      ],
+      "aliases": [
+        "学术写作",
+        "Markdown 编辑器"
+      ],
+      "tags": [
+        "写作",
+        "引用管理"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-3.0-or-later",
+      "repository": "https://github.com/Zettlr/Zettlr",
+      "website": "https://www.zettlr.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Zettlr.Zettlr"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 75
+    },
+    {
+      "id": "notepad-plus-plus",
+      "name": "Notepad++",
+      "description": "启动迅速、支持语法高亮、插件和批量文本处理的 Windows 编辑器。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "UltraEdit",
+        "Sublime Text"
+      ],
+      "aliases": [
+        "文本编辑器",
+        "代码编辑器"
+      ],
+      "tags": [
+        "文本编辑",
+        "插件"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "license": "GPL-3.0-or-later",
+      "repository": "https://github.com/notepad-plus-plus/notepad-plus-plus",
+      "website": "https://notepad-plus-plus.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Notepad++.Notepad++"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 76
+    },
+    {
+      "id": "geany",
+      "name": "Geany",
+      "description": "资源占用较低、包含项目与构建支持的跨平台代码编辑器。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Sublime Text",
+        "UltraEdit"
+      ],
+      "aliases": [
+        "轻量 IDE",
+        "代码编辑器"
+      ],
+      "tags": [
+        "轻量",
+        "编程"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/geany/geany",
+      "website": "https://www.geany.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Geany.Geany"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 77
+    },
+    {
+      "id": "dbeaver",
+      "name": "DBeaver Community",
+      "description": "支持多种数据库、SQL 编辑、数据浏览和结构管理的通用数据库工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "DataGrip",
+        "Navicat"
+      ],
+      "aliases": [
+        "数据库客户端",
+        "SQL 工具"
+      ],
+      "tags": [
+        "数据库",
+        "SQL"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/dbeaver/dbeaver",
+      "website": "https://dbeaver.io/",
+      "install": {
+        "provider": "winget",
+        "packageId": "DBeaver.DBeaver.Community"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 78
+    },
+    {
+      "id": "heidisql",
+      "name": "HeidiSQL",
+      "description": "面向 MySQL、MariaDB、PostgreSQL 和 SQL Server 的轻量数据库客户端。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Navicat",
+        "SQLyog"
+      ],
+      "aliases": [
+        "数据库客户端",
+        "SQL 管理"
+      ],
+      "tags": [
+        "数据库",
+        "轻量"
+      ],
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/HeidiSQL/HeidiSQL",
+      "website": "https://www.heidisql.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "HeidiSQL.HeidiSQL"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 79
+    },
+    {
+      "id": "beekeeper-studio",
+      "name": "Beekeeper Studio Community",
+      "description": "界面现代、覆盖常见关系型数据库的 SQL 编辑和数据浏览工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "DataGrip",
+        "TablePlus"
+      ],
+      "aliases": [
+        "数据库客户端",
+        "SQL 编辑器"
+      ],
+      "tags": [
+        "数据库",
+        "SQL"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-3.0-only",
+      "repository": "https://github.com/beekeeper-studio/beekeeper-studio",
+      "website": "https://www.beekeeperstudio.io/",
+      "install": {
+        "provider": "winget",
+        "packageId": "beekeeper-studio.beekeeper-studio"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 80
+    },
+    {
+      "id": "github-desktop",
+      "name": "GitHub Desktop",
+      "description": "通过图形界面完成 Git 提交、分支、合并和 GitHub 协作的桌面客户端。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "GitKraken",
+        "Fork"
+      ],
+      "aliases": [
+        "Git 客户端",
+        "版本控制"
+      ],
+      "tags": [
+        "Git",
+        "图形界面"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/desktop/desktop",
+      "website": "https://desktop.github.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "GitHub.GitHubDesktop"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 81
+    },
+    {
+      "id": "git-extensions",
+      "name": "Git Extensions",
+      "description": "集成提交历史、差异、分支和常用 Git 操作的 Windows 图形客户端。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "GitKraken",
+        "Sourcetree"
+      ],
+      "aliases": [
+        "Git 客户端",
+        "版本控制"
+      ],
+      "tags": [
+        "Git",
+        "Windows"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "license": "GPL-3.0-only",
+      "repository": "https://github.com/gitextensions/gitextensions",
+      "website": "https://gitextensions.github.io/",
+      "install": {
+        "provider": "winget",
+        "packageId": "GitExtensionsTeam.GitExtensions"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 82
+    },
+    {
+      "id": "winmerge",
+      "name": "WinMerge",
+      "description": "用于文件、文件夹和表格内容差异比较与合并的 Windows 工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Beyond Compare",
+        "Araxis Merge"
+      ],
+      "aliases": [
+        "文件对比",
+        "差异比较"
+      ],
+      "tags": [
+        "Diff",
+        "合并"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://github.com/WinMerge/winmerge",
+      "website": "https://winmerge.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "WinMerge.WinMerge"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 83
+    },
+    {
+      "id": "meld",
+      "name": "Meld",
+      "description": "以三路视图比较文件、目录和版本控制改动的可视化差异工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Beyond Compare",
+        "Araxis Merge"
+      ],
+      "aliases": [
+        "文件对比",
+        "三方合并"
+      ],
+      "tags": [
+        "Diff",
+        "版本控制"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://gitlab.gnome.org/GNOME/meld",
+      "website": "https://meldmerge.org/",
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 84
+    },
+    {
+      "id": "devtoys",
+      "name": "DevToys",
+      "description": "集合 JSON 格式化、编码解码、哈希和文本转换等常用开发工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "CyberChef",
+        "在线开发工具箱"
+      ],
+      "aliases": [
+        "开发者工具箱",
+        "程序员工具"
+      ],
+      "tags": [
+        "工具箱",
+        "离线"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/DevToys-app/DevToys",
+      "website": "https://devtoys.app/",
+      "install": {
+        "provider": "winget",
+        "packageId": "DevToys-app.DevToys"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 85
+    },
+    {
+      "id": "hoppscotch",
+      "name": "Hoppscotch",
+      "description": "可在浏览器使用或自托管的轻量 API 请求、调试与集合管理工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Postman",
+        "Insomnia"
+      ],
+      "aliases": [
+        "API 调试",
+        "接口测试"
+      ],
+      "tags": [
+        "API",
+        "自托管"
+      ],
+      "platforms": [
+        "Web"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/hoppscotch/hoppscotch",
+      "website": "https://hoppscotch.io/",
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 86
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "description": "支持无守护进程与无根模式的 OCI 容器和 Pod 管理工具。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Docker Desktop"
+      ],
+      "aliases": [
+        "容器工具",
+        "Docker 替代"
+      ],
+      "tags": [
+        "容器",
+        "OCI"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/containers/podman",
+      "website": "https://podman.io/",
+      "install": {
+        "provider": "winget",
+        "packageId": "RedHat.Podman"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 87
+    },
+    {
+      "id": "rancher-desktop",
+      "name": "Rancher Desktop",
+      "description": "在桌面运行容器与 Kubernetes，并可切换容器运行时的开发环境。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "Docker Desktop"
+      ],
+      "aliases": [
+        "容器桌面",
+        "本地 Kubernetes"
+      ],
+      "tags": [
+        "容器",
+        "Kubernetes"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/rancher-sandbox/rancher-desktop",
+      "website": "https://rancherdesktop.io/",
+      "install": {
+        "provider": "winget",
+        "packageId": "SUSE.RancherDesktop"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 88
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "description": "用于捕获、过滤和分析网络协议与数据包的专业网络诊断工具。",
+      "category": "远程与网络",
+      "alternativeTo": [
+        "SolarWinds Packet Analysis",
+        "Colasoft Capsa"
+      ],
+      "aliases": [
+        "抓包工具",
+        "网络分析"
+      ],
+      "tags": [
+        "抓包",
+        "协议分析"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://gitlab.com/wireshark/wireshark",
+      "website": "https://www.wireshark.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "WiresharkFoundation.Wireshark"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 89
+    },
+    {
+      "id": "angry-ip-scanner",
+      "name": "Angry IP Scanner",
+      "description": "快速扫描局域网 IP、端口和设备信息的跨平台网络工具。",
+      "category": "远程与网络",
+      "alternativeTo": [
+        "Advanced IP Scanner",
+        "Lansweeper"
+      ],
+      "aliases": [
+        "IP 扫描",
+        "局域网扫描"
+      ],
+      "tags": [
+        "网络扫描",
+        "端口"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-2.0-only",
+      "repository": "https://github.com/angryip/ipscan",
+      "website": "https://angryip.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "angryziber.AngryIPScanner"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 90
+    },
+    {
+      "id": "tabby",
+      "name": "Tabby",
+      "description": "集成本地终端、SSH、串口与主题配置的跨平台终端应用。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "SecureCRT",
+        "MobaXterm"
+      ],
+      "aliases": [
+        "SSH 客户端",
+        "终端模拟器"
+      ],
+      "tags": [
+        "终端",
+        "SSH"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/Eugeny/tabby",
+      "website": "https://tabby.sh/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Eugeny.Tabby"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 91
+    },
+    {
+      "id": "alacritty",
+      "name": "Alacritty",
+      "description": "使用 GPU 加速、强调速度和简洁配置的跨平台终端模拟器。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "iTerm2",
+        "Windows Terminal"
+      ],
+      "aliases": [
+        "终端模拟器",
+        "命令行终端"
+      ],
+      "tags": [
+        "终端",
+        "GPU 加速"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/alacritty/alacritty",
+      "website": "https://alacritty.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Alacritty.Alacritty"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 92
+    },
+    {
+      "id": "wezterm",
+      "name": "WezTerm",
+      "description": "支持 GPU 加速、标签页、窗格、SSH 和 Lua 配置的终端模拟器。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "iTerm2",
+        "SecureCRT"
+      ],
+      "aliases": [
+        "终端模拟器",
+        "SSH 终端"
+      ],
+      "tags": [
+        "终端",
+        "Lua 配置"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/wezterm/wezterm",
+      "website": "https://wezterm.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "wez.wezterm"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 93
+    },
+    {
+      "id": "windows-terminal",
+      "name": "Windows Terminal",
+      "description": "微软维护的现代 Windows 终端，支持标签页、窗格、Unicode 和 GPU 渲染。",
+      "category": "开发工具",
+      "alternativeTo": [
+        "ConEmu",
+        "SecureCRT"
+      ],
+      "aliases": [
+        "Windows 终端",
+        "命令行终端"
+      ],
+      "tags": [
+        "终端",
+        "Windows"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/terminal",
+      "website": "https://aka.ms/terminal",
+      "install": {
+        "provider": "winget",
+        "packageId": "Microsoft.WindowsTerminal"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 94
+    },
+    {
+      "id": "powertoys",
+      "name": "Microsoft PowerToys",
+      "description": "包含窗口布局、批量重命名、颜色选取和快捷启动等 Windows 增强工具。",
+      "category": "系统工具",
+      "alternativeTo": [
+        "DisplayFusion",
+        "Listary"
+      ],
+      "aliases": [
+        "Windows 增强",
+        "微软工具箱"
+      ],
+      "tags": [
+        "效率工具",
+        "Windows"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/microsoft/PowerToys",
+      "website": "https://learn.microsoft.com/windows/powertoys/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Microsoft.PowerToys"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 95
+    },
+    {
+      "id": "flow-launcher",
+      "name": "Flow Launcher",
+      "description": "通过键盘快速搜索应用、文件、网页和插件命令的 Windows 启动器。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Alfred",
+        "Listary"
+      ],
+      "aliases": [
+        "快速启动",
+        "全局搜索"
+      ],
+      "tags": [
+        "启动器",
+        "插件"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "license": "MIT",
+      "repository": "https://github.com/Flow-Launcher/Flow.Launcher",
+      "website": "https://www.flowlauncher.com/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Flow-Launcher.Flow-Launcher"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 96
+    },
+    {
+      "id": "espanso",
+      "name": "Espanso",
+      "description": "通过自定义缩写在不同应用中快速展开常用文字、代码和模板。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "TextExpander",
+        "PhraseExpress"
+      ],
+      "aliases": [
+        "文本扩展",
+        "快捷输入"
+      ],
+      "tags": [
+        "自动输入",
+        "模板"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-3.0-only",
+      "repository": "https://github.com/espanso/espanso",
+      "website": "https://espanso.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "Espanso.Espanso"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 97
+    },
+    {
+      "id": "copyq",
+      "name": "CopyQ",
+      "description": "保存、搜索和编辑剪贴板历史，支持标签、脚本与自定义动作。",
+      "category": "效率办公",
+      "alternativeTo": [
+        "Ditto Clipboard",
+        "Paste"
+      ],
+      "aliases": [
+        "剪贴板管理",
+        "复制历史"
+      ],
+      "tags": [
+        "剪贴板",
+        "自动化"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "GPL-3.0-or-later",
+      "repository": "https://github.com/hluk/CopyQ",
+      "website": "https://hluk.github.io/CopyQ/",
+      "install": {
+        "provider": "winget",
+        "packageId": "hluk.CopyQ"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 98
+    },
+    {
+      "id": "kde-connect",
+      "name": "KDE Connect",
+      "description": "在电脑与手机间同步通知、剪贴板、文件并提供遥控功能。",
+      "category": "通信",
+      "alternativeTo": [
+        "Microsoft Phone Link",
+        "AirDroid"
+      ],
+      "aliases": [
+        "手机互联",
+        "跨设备同步"
+      ],
+      "tags": [
+        "设备互联",
+        "局域网"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux",
+        "Android",
+        "iOS"
+      ],
+      "license": "GPL-2.0-or-later",
+      "repository": "https://invent.kde.org/network/kdeconnect-kde",
+      "website": "https://kdeconnect.kde.org/",
+      "install": {
+        "provider": "winget",
+        "packageId": "KDE.KDEConnect"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 99
+    },
+    {
+      "id": "scrcpy",
+      "name": "scrcpy",
+      "description": "通过 USB 或网络在电脑显示并控制 Android 设备，无需在手机安装应用。",
+      "category": "系统工具",
+      "alternativeTo": [
+        "Vysor",
+        "AirDroid Cast"
+      ],
+      "aliases": [
+        "安卓投屏",
+        "手机控制"
+      ],
+      "tags": [
+        "Android",
+        "投屏"
+      ],
+      "platforms": [
+        "Windows",
+        "macOS",
+        "Linux"
+      ],
+      "license": "Apache-2.0",
+      "repository": "https://github.com/Genymobile/scrcpy",
+      "website": "https://github.com/Genymobile/scrcpy",
+      "install": {
+        "provider": "winget",
+        "packageId": "Genymobile.scrcpy"
+      },
+      "verified": true,
+      "verifiedAt": "2026-08-29",
+      "rank": 100
     }
   ]
 };

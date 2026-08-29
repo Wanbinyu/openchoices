@@ -483,6 +483,10 @@ h2 {
   background: #07111e;
 }
 
+.install-command[hidden] {
+  display: none;
+}
+
 .install-command code {
   min-width: 0;
   overflow: hidden;

@@ -12,6 +12,7 @@ const assertions = [
   [html.includes('id="card-template"'), "index.html includes the result-card template"],
   [html.includes('rel="manifest"'), "index.html links the PWA manifest"],
   [css.includes("@media (max-width: 620px)"), "styles include a narrow mobile layout"],
+  [css.includes(".install-command[hidden]"), "manual-install cards hide the empty command row"],
   [html.includes('src="data/catalog.js?v=1"'), "index includes the file-compatible catalog script"],
   [html.includes('src="app.js?v=3"') && !html.includes('type="module"'), "app script can run from file URLs"],
   [js.includes("window.OPENCHOICES_CATALOG"), "app prefers the embedded browser catalog"],
