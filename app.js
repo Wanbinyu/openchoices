@@ -48,6 +48,7 @@ const getSearchText = (app) =>
       app.description,
       app.category,
       ...app.alternativeTo,
+      ...(app.aliases ?? []),
       ...app.tags,
       ...app.platforms,
     ].join(" "),
@@ -103,7 +104,8 @@ const createCard = (app) => {
   const node = elements.template.content.firstElementChild.cloneNode(true);
   node.querySelector(".app-category").textContent = app.category;
   const badge = node.querySelector(".verification-badge");
-  badge.textContent = app.verified ? "已核验" : "社区提交";
+  badge.textContent = "免费开源";
+  badge.title = app.verified ? "免费开源，基础信息已整理" : "免费开源，社区提交信息待整理";
   badge.classList.toggle("community", !app.verified);
   node.querySelector(".app-monogram").textContent = app.name.slice(0, 2).toUpperCase();
   node.querySelector(".app-name").textContent = app.name;

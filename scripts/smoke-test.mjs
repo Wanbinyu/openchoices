@@ -15,6 +15,7 @@ const assertions = [
   [html.includes('src="data/catalog.js?v=1"'), "index includes the file-compatible catalog script"],
   [html.includes('src="app.js?v=3"') && !html.includes('type="module"'), "app script can run from file URLs"],
   [js.includes("window.OPENCHOICES_CATALOG"), "app prefers the embedded browser catalog"],
+  [js.includes("app.aliases ?? []"), "search includes optional aliases"],
   [js.includes('fetch("data/catalog.json"'), "app retains the JSON network fallback"],
   [catalogScript.includes("window.OPENCHOICES_CATALOG ="), "generated catalog exposes browser data"],
   [js.includes("winget install --id"), "install commands are generated locally"],

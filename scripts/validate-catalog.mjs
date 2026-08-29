@@ -37,6 +37,13 @@ for (const [index, app] of (catalog.apps ?? []).entries()) {
       errors.push(`${prefix}.${field} may contain only non-empty strings`);
     }
   }
+  if (app.aliases !== undefined) {
+    if (!Array.isArray(app.aliases)) {
+      errors.push(`${prefix}.aliases must be an array when provided`);
+    } else if (app.aliases.some((value) => typeof value !== "string" || !value.trim())) {
+      errors.push(`${prefix}.aliases may contain only non-empty strings`);
+    }
+  }
 
   for (const field of ["repository", "website"]) {
     try {
