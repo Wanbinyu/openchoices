@@ -209,9 +209,12 @@ const attachEvents = () => {
 
 const loadCatalog = async () => {
   try {
-    const response = await fetch("data/catalog.json", { cache: "no-cache" });
-    if (!response.ok) throw new Error(`Catalog request failed: ${response.status}`);
-    const payload = await response.json();
+    let payload = window.OPENCHOICES_CATALOG;
+    if (!payload) {
+      const response = await fetch("data/catalog.json", { cache: "no-cache" });
+      if (!response.ok) throw new Error(`Catalog request failed: ${response.status}`);
+      payload = await response.json();
+    }
     state.catalog = payload.apps;
     state.metadata = payload.metadata;
     addOptions(elements.category, [...new Set(state.catalog.map((app) => app.category))].sort());

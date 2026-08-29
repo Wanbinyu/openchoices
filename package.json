@@ -5,10 +5,12 @@
   "type": "module",
   "description": "A static, serverless catalog for discovering verified open-source alternatives.",
   "scripts": {
+    "generate": "node scripts/generate-catalog-script.mjs",
+    "generate:check": "node scripts/generate-catalog-script.mjs --check",
     "validate": "node scripts/validate-catalog.mjs",
     "check:links": "node scripts/check-links.mjs",
     "test": "node scripts/smoke-test.mjs",
-    "verify": "npm run validate && npm test"
+    "verify": "npm run generate:check && npm run validate && npm test"
   },
   "engines": {
     "node": ">=20"

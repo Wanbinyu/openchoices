@@ -19,7 +19,9 @@ OpenChoices 是一个不依赖服务器的开源软件目录。它使用公开�
 
 ## 本地运行
 
-静态资源需要通过 HTTP 打开，才能正常载入目录和注册 Service Worker：
+可以直接双击 `index.html` 浏览和搜索目录。直接打开时使用生成的 `data/catalog.js`，PWA 离线缓存不会启用。
+
+如需测试与 GitHub Pages 相同的 HTTP/PWA 运行方式：
 
 ```powershell
 npx --yes http-server . -p 4173 -c-1
@@ -35,6 +37,14 @@ npm run check:links
 ```
 
 `verify` 不访问网络，适合每次提交前运行。`check:links` 会访问所有官网和源码地址，主要由计划工作流每周执行。
+
+修改 `data/catalog.json` 后先运行：
+
+```powershell
+npm run generate
+```
+
+它会生成可供直接双击页面使用的 `data/catalog.js`；`npm run verify` 会检查两者是否一致。
 
 ## 数据安全边界
 

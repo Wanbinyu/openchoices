@@ -1,12 +1,13 @@
-const CACHE_VERSION = "openchoices-v2";
+const CACHE_VERSION = "openchoices-v3";
 const APP_SHELL = [
   "./",
   "index.html",
   "styles.css?v=2",
-  "app.js?v=2",
+  "app.js?v=3",
   "manifest.webmanifest",
   "assets/icon.svg",
   "data/catalog.json",
+  "data/catalog.js?v=1",
 ];
 
 self.addEventListener("install", (event) => {
