@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1220">
+    <meta
+      name="description"
+      content="按常见商业软件查找经过整理的开源替代品，并查看许可证、平台与受控安装方式。"
+    >
+    <title>OpenChoices · 找到可信的开源替代品</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=2">
+  </head>
+  <body>
+    <a class="skip-link" href="#results">跳到搜索结果</a>
+
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="OpenChoices 首页">
+        <span class="brand-mark" aria-hidden="true">OC</span>
+        <span>
+          <strong>OpenChoices</strong>
+          <small>Open-source alternatives, clearly compared.</small>
+        </span>
+      </a>
+      <nav aria-label="主要导航">
+        <a href="#explore">浏览</a>
+        <a href="#principles">收录原则</a>
+        <a href="https://github.com/Wanbinyu/openchoices" data-repository-link>GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="explore">
+        <div class="hero-copy">
+          <p class="eyebrow">不必先知道开源项目的名字</p>
+          <h1>从你熟悉的软件出发，找到可信的开源替代品。</h1>
+          <p class="hero-description">
+            搜索 Photoshop、Notion、Office 或其他产品，比较许可证、支持平台与安装方式。目录公开维护，无广告、无跟踪，也不执行远程脚本。
+          </p>
+        </div>
+
+        <div class="search-panel" role="search">
+          <label for="search-input">搜索软件、替代目标或用途</label>
+          <div class="search-box">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m21 21-4.3-4.3m2.3-5.2a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"/>
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              autocomplete="off"
+              placeholder="例如：Photoshop、Notion、视频剪辑……"
+            >
+            <kbd>/</kbd>
+          </div>
+          <div class="quick-searches" aria-label="热门搜索">
+            <span>试试：</span>
+            <button type="button" data-query="Photoshop">Photoshop</button>
+            <button type="button" data-query="Notion">Notion</button>
+            <button type="button" data-query="Microsoft Office">Office</button>
+            <button type="button" data-query="视频剪辑">视频剪辑</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog-section" aria-labelledby="catalog-heading">
+        <div class="catalog-heading-row">
+          <div>
+            <p class="eyebrow">社区维护的目录</p>
+            <h2 id="catalog-heading">浏览开源选择</h2>
+          </div>
+          <p id="result-summary" class="result-summary" aria-live="polite">正在载入目录……</p>
+        </div>
+
+        <div class="filters" aria-label="目录筛选">
+          <label>
+            <span>分类</span>
+            <select id="category-filter">
+              <option value="all">全部分类</option>
+            </select>
+          </label>
+          <label>
+            <span>平台</span>
+            <select id="platform-filter">
+              <option value="all">全部平台</option>
+            </select>
+          </label>
+          <label>
+            <span>安装方式</span>
+            <select id="install-filter">
+              <option value="all">全部</option>
+              <option value="winget">支持 WinGet</option>
+              <option value="manual">手动安装</option>
+            </select>
+          </label>
+          <label>
+            <span>排序</span>
+            <select id="sort-select">
+              <option value="recommended">推荐顺序</option>
+              <option value="name">名称 A–Z</option>
+              <option value="recent">最近核验</option>
+            </select>
+          </label>
+          <button id="reset-filters" class="reset-button" type="button">重置</button>
+        </div>
+
+        <div id="error-banner" class="error-banner" hidden>
+          目录暂时无法载入。请检查网络后刷新；已安装的 PWA 会尝试使用最近一次缓存。
+        </div>
+        <div id="results" class="results-grid" tabindex="-1" aria-busy="true"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <span aria-hidden="true">⌕</span>
+          <h3>没有找到匹配项目</h3>
+          <p>换一个产品名称、用途或清除筛选条件试试。</p>
+          <button type="button" data-reset>清除全部条件</button>
+        </div>
+      </section>
+
+      <section class="principles" id="principles" aria-labelledby="principles-heading">
+        <div>
+          <p class="eyebrow">目录可信度优先</p>
+          <h2 id="principles-heading">链接合集之外，还要说明为什么值得选择。</h2>
+        </div>
+        <div class="principle-grid">
+          <article>
+            <span>01</span>
+            <h3>明确许可证</h3>
+            <p>标注项目许可证与源码仓库，避免把免费增值产品误写成完全开源。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>受控安装</h3>
+            <p>目录只能声明包管理器 ID，不能下发任意脚本或命令。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>持续核验</h3>
+            <p>自动检查结构、链接和重复条目，人工决定项目是否值得收录。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>OpenChoices 是社区项目，不隶属于所列软件或商业产品。</p>
+      <p><span id="catalog-version">目录版本载入中</span> · 数据可通过 Pull Request 共同维护</p>
+    </footer>
+
+    <template id="card-template">
+      <article class="app-card">
+        <div class="card-topline">
+          <span class="app-category"></span>
+          <span class="verification-badge" title="条目字段已经人工核验">已核验</span>
+        </div>
+        <div class="app-title-row">
+          <div class="app-monogram" aria-hidden="true"></div>
+          <div>
+            <h3 class="app-name"></h3>
+            <p class="alternative-line"></p>
+          </div>
+        </div>
+        <p class="app-description"></p>
+        <div class="tag-list"></div>
+        <dl class="app-meta">
+          <div>
+            <dt>许可证</dt>
+            <dd class="app-license"></dd>
+          </div>
+          <div>
+            <dt>最近核验</dt>
+            <dd class="app-verified-date"></dd>
+          </div>
+        </dl>
+        <div class="install-command" hidden>
+          <code></code>
+          <button type="button" class="copy-button" aria-label="复制 WinGet 安装命令">复制</button>
+        </div>
+        <div class="card-actions">
+          <a class="primary-action" target="_blank" rel="noreferrer">访问官网</a>
+          <a class="secondary-action" target="_blank" rel="noreferrer">源码</a>
+        </div>
+      </article>
+    </template>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <script src="app.js?v=2" type="module"></script>
+  </body>
+</html>

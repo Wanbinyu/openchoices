@@ -1,0 +1,19 @@
+{
+  "name": "OpenChoices · 开源替代品目录",
+  "short_name": "OpenChoices",
+  "description": "搜索、比较并发现可信的开源软件替代品。",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07101d",
+  "theme_color": "#0b1220",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

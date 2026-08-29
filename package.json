@@ -1,0 +1,17 @@
+{
+  "name": "openchoices",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A static, serverless catalog for discovering verified open-source alternatives.",
+  "scripts": {
+    "validate": "node scripts/validate-catalog.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "test": "node scripts/smoke-test.mjs",
+    "verify": "npm run validate && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
