@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { checkLink } from "./lib/check-link.mjs";
 
 const catalog = JSON.parse(await readFile(new URL("../data/catalog.json", import.meta.url), "utf8"));
 const targets = catalog.apps.flatMap((app) => [
@@ -12,18 +13,12 @@ async function worker() {
   while (cursor < targets.length) {
     const target = targets[cursor++];
     try {
-      const response = await fetch(target.url, {
-        method: "GET",
-        redirect: "follow",
-        signal: AbortSignal.timeout(20_000),
-        headers: { "User-Agent": "OpenChoices-link-check/0.1" },
+      const status = await checkLink(target.url, {
+        onRetry: ({ attempt, maxAttempts, delayMs, error }) => console.warn(
+          `RETRY ${attempt}/${maxAttempts} ${target.app} ${target.type}: ${error.message}; retrying in ${delayMs}ms ${target.url}`,
+        ),
       });
-      if (response.status >= 400 && response.status !== 403 && response.status !== 429) {
-        failures.push(`${target.app} ${target.type}: HTTP ${response.status} ${target.url}`);
-      } else {
-        console.log(`OK ${response.status} ${target.app} ${target.type}`);
-      }
-      await response.body?.cancel();
+      console.log(`${status === 403 ? "SKIP" : "OK"} ${status} ${target.app} ${target.type}`);
     } catch (error) {
       failures.push(`${target.app} ${target.type}: ${error.message} ${target.url}`);
     }

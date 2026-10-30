@@ -9,7 +9,7 @@
     "generate:check": "node scripts/generate-catalog-script.mjs --check",
     "validate": "node scripts/validate-catalog.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "test": "node scripts/smoke-test.mjs",
+    "test": "node scripts/smoke-test.mjs && node --test scripts/check-links.test.mjs",
     "verify": "npm run generate:check && npm run validate && npm test"
   },
   "engines": {
